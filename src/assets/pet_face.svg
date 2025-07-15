@@ -1,0 +1,12 @@
+<svg width="325" height="250" viewBox="0 0 325 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="pet_face">
+<g id="Face">
+<ellipse id="Ellipse 5" cx="162.5" cy="125" rx="162.5" ry="125" fill="#00CBD9"/>
+<path id="Vector 1" d="M71 164C71 225 243 233 243 164" stroke="black" stroke-width="8" stroke-linecap="round"/>
+</g>
+<g id="Eyes">
+<ellipse id="Ellipse 3" cx="99" cy="75" rx="18" ry="15" fill="black"/>
+<ellipse id="Ellipse 4" cx="208" cy="75" rx="18" ry="15" fill="black"/>
+</g>
+</g>
+</svg>

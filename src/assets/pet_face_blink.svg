@@ -1,0 +1,12 @@
+<svg width="325" height="250" viewBox="0 0 325 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="pet_face_blink">
+<g id="Face_blink">
+<ellipse id="Ellipse 5" cx="162.5" cy="125" rx="162.5" ry="125" fill="#00CBD9"/>
+<path id="Vector 1" d="M71 164C71 225 243 233 243 164" stroke="black" stroke-width="8" stroke-linecap="round"/>
+</g>
+<g id="Eyes_blink">
+<line id="Line 1" x1="60" y1="71.5" x2="96" y2="71.5" stroke="black" stroke-width="7"/>
+<line id="Line 2" x1="219" y1="71.5" x2="255" y2="71.5" stroke="black" stroke-width="7"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,111 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header {
+  padding: 1.5em;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo.blink {
+  padding: 0em;
+}
+.logo.vite {
+  padding: 0em;
+}
+.logo.vite:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes logo-jump-left {
+  0%,
+  100% {
+    transform: rotate(135deg) translateX(-140%) translateY(50%); /* 50 + 100/sqrt(2) */
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(30%) translateY(30%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes logo-jump-center {
+  0%,
+  100% {
+    transform: translateY(-30%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes logo-jump-blink {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(-135%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    opacity: 100;
+    transform: translateY(-105%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes logo-jump-right {
+  0%,
+  100% {
+    transform: rotate(-135deg) translateY(50%) translateX(140%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(-30%) translateY(30%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(1) .logo.vite {
+    animation: logo-jump-left infinite 3s;
+  }
+  a:nth-of-type(2) .logo.vite {
+    animation: logo-jump-center infinite 3s;
+  }
+  a:nth-of-type(3) .logo.vite {
+    animation: logo-jump-right infinite 3s;
+  }
+  a:nth-of-type(2) .logo.blink {
+    animation: logo-jump-blink infinite 3s;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
