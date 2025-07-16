@@ -1,14 +1,24 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
+import { useState, useEffect } from 'react';
+import usePersistState from './components/persistState';
+
 import pet_face from './assets/pet_face.svg';
 import pet_face_blink from './assets/pet_face_blink.svg';
 import LeftArm from './assets/LeftArm.svg';
 import RightArm from './assets/RightArm.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
+  const [count, setCount] = useState(() => {
+    // Load saved count from localStorage or default to 0
+    return parseInt(localStorage.getItem('counter') || '0');
+  });
+
+  useEffect(() => {
+    // Save to localStorage whenever count changes
+    localStorage.setItem('counter', count.toString());
+  }, [count]);
+
 
   return (
     <>
@@ -32,7 +42,7 @@ function App() {
         <a></a>
       </div>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button onClick={() => setCount(count + 1)}>
           happiness is {count}
         </button>
         <p>Games coming soon!</p>

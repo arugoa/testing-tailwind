@@ -13,7 +13,7 @@ export default defineConfig({
       // switch to "true" to enable sw on development
       devOptions: { enabled: true },
       registerType: 'autoUpdate',
-      workbox: { globPatterns: ['**/*.{js,jsx,css,html}', '**/*.{svg,png,jpg,gif}', '**/**/*.{svg,png,jpg}'] },
+      workbox: { globPatterns: ['**/*.{js,jsx,css,html,json}', '**/*.{svg,png,jpg,gif}', '**/**/*.{svg,png,jpg}', '*.{json}'] },
     }),
   ],
 })
