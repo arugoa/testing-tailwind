@@ -1,0 +1,28 @@
+{
+  "name": "vite-react-starter",
+  "short_name": "react-starter",
+  "description": "Starter kit for modern web applications",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "LeftArm.svg",
+      "sizes": "180x327",
+      "type": "src/assets/svg"
+    },
+    {
+      "src": "RightArm.svg",
+      "sizes": "180x327",
+      "type": "src/assets/svg"
+    },
+    {
+      "src": "pet_face.svg",
+      "sizes": "325x250",
+      "type": "src/assets/svg"
+    },
+    {
+      "src": "pet_face_blink.svg",
+      "sizes": "325x250",
+      "type": "src/assets/svg"
+    }
+  ]
+}
